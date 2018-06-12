@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Battery</string>
+    <string name="setvalue">Set value of battery</string>
+    <string name="set">Set</string>
+    <string name="charge">Charging</string>
+</resources>
