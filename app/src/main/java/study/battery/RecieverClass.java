@@ -17,12 +17,13 @@ public class RecieverClass extends BroadcastReceiver {
         boolean isCharging = status == BatteryManager.BATTERY_STATUS_CHARGING || status == BatteryManager.BATTERY_STATUS_FULL;
         String batlevel = Integer.toString(indicator);
         if (listener != null) {
-            listener.Listener(batlevel);
+            listener.Listener(batlevel,isCharging);
         }
+
     }
 
     public interface Listener {
-        public void Listener(String batlevel);
+        public void Listener(String batlevel,boolean isCharging);
     }
     public void setListener(Listener listener) {
         RecieverClass.listener = listener;
